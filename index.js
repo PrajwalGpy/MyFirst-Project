@@ -1,15 +1,25 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+let count = document.getElementById("count-val")
+let val=0;
+let svae =document.getElementById("btn-save")
+let btnre = document.getElementById("btn-re")
+function increment(){
+    val+=1;
+    count.textContent=val;
+
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
+function save(){
+
+    saves.textContent+=val+ " - ";
+    val=0;
+    count.textContent=val;
+}
+
+function reset(){
+    val=0;
+    count.textContent=val;
+    saves.textContent= "svaes: ";
+        
+
 }
